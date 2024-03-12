@@ -7,7 +7,7 @@ public class Main {
         String a = sc.nextLine();
         String b = sc.nextLine();
 
-        System.out.println(a);
         System.out.println(b);
+        System.out.println(a);
     }
 }
