@@ -15,7 +15,7 @@ public class Main {
                 if (isReverse) {
                     System.out.print((n * (j + 1) - (i + 1)) + " ");
                 } else {
-                    System.out.print((i + j * m) + " ");
+                    System.out.print((i + j * n) + " ");
                 }
             }
             System.out.println();
