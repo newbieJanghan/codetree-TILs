@@ -15,19 +15,18 @@ public class Main {
             if (i == 0) {
                 accChar = chars[i];
                 accCount++;
-                continue;
-            }
-
-            if (accChar == chars[i]) {
-                accCount++;
             } else {
-                encoded += accChar;
-                encoded += accCount;
+                if (accChar == chars[i]) {
+                    accCount++;
+                } else {
+                    encoded += accChar;
+                    encoded += accCount;
 
-                accChar = chars[i];
-                accCount = 1;
+                    accChar = chars[i];
+                    accCount = 1;
+                }
             }
-
+            
             if (i == chars.length - 1) {
                 encoded += accChar;
                 encoded += accCount;
