@@ -26,8 +26,16 @@ public class Main {
 
             // 첫 라운드
             if (col == 0 && row == 0) {
-                col++;
-                continue;
+                if (m == 1 && n == 1) {
+                    break;
+                } else {
+                    if (n > m) {
+                        row++;
+                    } else {
+                        col++;
+                    }
+                    continue;
+                }
             }
 
             // 대각선 진행이 끝났을 때
