@@ -13,7 +13,7 @@ public class Main {
                 if (col == 0 || row == col) {
                     arr2d[row][col] = 1;
                 } else if (row != 0 & col <= row) {
-                    arr2d[row][col] = arr2d[row - 1][col] + arr2d[row][col - 1];
+                    arr2d[row][col] = arr2d[row - 1][col - 1] + arr2d[row - 1][col];
                 }
             }
         }
