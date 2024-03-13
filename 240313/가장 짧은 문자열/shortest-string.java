@@ -1,23 +1,20 @@
-import java.util.Arrays;
-import java.util.OptionalInt;
-import java.util.Scanner;
+import java.util.*;
 
 public class Main {
 
     public static void main(String[] receipt) {
         Scanner sc = new Scanner(System.in);
-        int first = sc.next().length();
-        int second = sc.next().length();
-        int third = sc.next().length();
+        String first = sc.next();
+        String second = sc.next();
+        String third = sc.next();
 
-        int[] array = new int[3];
-        array[0] = first;
-        array[1] = second;
-        array[2] = third;
+        ArrayList<String> array = new ArrayList<>();
+        array.add(first);
+        array.add(second);
+        array.add(third);
 
-        OptionalInt min = Arrays.stream(array).min();
+        array.sort(Comparator.comparing((String::length)));
 
-
-        System.out.print(min.getAsInt());
+        System.out.println(array.get(2).length() - array.get(0).length());
     }
 }
