@@ -18,6 +18,15 @@ public class Main {
 
             arr2d[row][col] = number;
 
+            // 예외 처리
+            if (m == 1 && n == 1) {
+                break;
+            }
+            if (m == 1 && n != 1) {
+                row++;
+                continue;
+            }
+
 
             // 마지막 인덱스
             if (col + 1 == m && row + 1 == n) {
@@ -26,16 +35,8 @@ public class Main {
 
             // 첫 라운드
             if (col == 0 && row == 0) {
-                if (m == 1 && n == 1) {
-                    break;
-                } else {
-                    if (n > m) {
-                        row++;
-                    } else {
-                        col++;
-                    }
-                    continue;
-                }
+                col++;
+                continue;
             }
 
             // 대각선 진행이 끝났을 때
