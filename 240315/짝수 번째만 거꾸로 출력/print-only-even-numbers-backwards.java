@@ -8,6 +8,9 @@ public class Main {
         int len = array.length;
 
         for (int i = len - 1; i >= 0; i--) {
+            if (len == 1) {
+                break;
+            }
             if ((len - i) % 2 == 1) {
                 System.out.print(array[i]);
             }
