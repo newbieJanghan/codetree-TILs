@@ -17,7 +17,7 @@ public class Main {
                     char tmp = str.charAt(firstIdx);
 
                     str = str.substring(0, firstIdx) + str.charAt(secondIdx) + str.substring(firstIdx + 1);
-                    str = str.subString(0, secondIdx) + temp + str.substring(secondIdx + 1)
+                    str = str.subString(0, secondIdx) + temp + str.substring(secondIdx + 1);
 
                     break;
                 case 2:
