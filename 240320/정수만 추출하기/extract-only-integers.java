@@ -6,23 +6,27 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
         String a = sc.next();
+        String intA = "0";
 
         for (int i=0; i<a.length(); i++) {
-            if ( a.charAt(i) < '0') {
-                a = a.substring(0, i);
+            if ( '0' <= a.charAt(i) && a.charAt(i) < '9') {
+                intA += a.charAt(i);
+            } else {
                 break;
             }
         }
 
         String b = sc.next();
+        String intB = "0";
         for (int i=0; i<b.length(); i++) {
-            if ( b.charAt(i) < '0') {
-                b = b.substring(0, i);
+            if ( '0' <= b.charAt(i) && b.charAt(i) < '9') {
+                intB += b.charAt(i);
+            } else {
                 break;
             }
         }
 
-        System.out.println((Integer.parseInt(a) + Integer.parseInt(b)));
+        System.out.println((Integer.parseInt(intA) + Integer.parseInt(intB)));
 
 
     }
