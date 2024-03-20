@@ -7,15 +7,20 @@ public class Main {
         String str = sc.next();
         String compare = sc.next();
 
+        boolean done = false;
+
         for (int i=0; i<str.length(); i++) {
             if (str.equals(compare)) {
                 System.out.println(i);
+                done = true;
                 break;
             } else {
-                str = str.substring(1) + str.charAt(0);
+                str = str.charAt(str.length()-1) + str.substring(0, str.length()-1);
             }
         }
-        System.out.println(-1);
+        if (!done) {
+            System.out.println(-1);
+        }
 
     }
 }
