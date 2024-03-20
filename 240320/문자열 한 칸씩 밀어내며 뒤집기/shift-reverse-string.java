@@ -19,11 +19,7 @@ public class Main {
                     str = str.charAt(str.length()-1) + str.substring(0, str.length()-1);
                     break;
                 case 3:
-                    String temp = "";
-                    for (int j=str.length()-1; j>=0; j--) {
-                        temp += str.charAt(j);
-                    }
-                    str = temp;
+                    str = new StringBuffer(str).reverse().toString();
                     break;
             }
 
