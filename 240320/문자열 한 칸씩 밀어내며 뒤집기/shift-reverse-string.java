@@ -24,6 +24,7 @@ public class Main {
                         temp += str.charAt(j);
                     }
                     str = temp;
+                    break;
             }
 
             System.out.println(str);
