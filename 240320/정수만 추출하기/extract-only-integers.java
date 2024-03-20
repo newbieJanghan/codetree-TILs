@@ -9,7 +9,7 @@ public class Main {
         String intA = "0";
 
         for (int i=0; i<a.length(); i++) {
-            if ( '0' <= a.charAt(i) && a.charAt(i) < '9') {
+            if ( '0' <= a.charAt(i) && a.charAt(i) <= '9') {
                 intA += a.charAt(i);
             } else {
                 break;
@@ -19,7 +19,7 @@ public class Main {
         String b = sc.next();
         String intB = "0";
         for (int i=0; i<b.length(); i++) {
-            if ( '0' <= b.charAt(i) && b.charAt(i) < '9') {
+            if ( '0' <= b.charAt(i) && b.charAt(i) <= '9') {
                 intB += b.charAt(i);
             } else {
                 break;
