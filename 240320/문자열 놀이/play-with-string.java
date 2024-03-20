@@ -14,13 +14,10 @@ public class Main {
                     int firstIdx = sc.nextInt() - 1;
                     int secondIdx = sc.nextInt() - 1;
 
-                    char firstChar = str.charAt(firstIdx);
-                    char secondChar = str.charAt(secondIdx);
+                    char tmp = str.charAt(firstIdx);
 
-                    char[] charArr = str.toCharArray();
-                    charArr[firstIdx] = secondChar;
-                    charArr[secondIdx] = firstChar;
-                    str = new String(charArr);
+                    str = str.substring(0, firstIdx) + str.charAt(secondIdx) + str.substring(firstIdx + 1);
+                    str = str.subString(0, secondIdx) + temp + str.substring(secondIdx + 1)
 
                     break;
                 case 2:
