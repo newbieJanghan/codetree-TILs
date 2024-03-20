@@ -6,7 +6,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int input = (int) sc.next().charAt(0);
 
-        if (input == 0) {
+        if (input == 97) {
             System.out.print("z");
         } 
         else {
